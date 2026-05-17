@@ -40,4 +40,4 @@ jobs:
           git add dist/
           git commit -m "auto build binary" || echo "nothing to commit"
 
-          git push
+          git push origin HEAD:${{ github.ref_name }}
