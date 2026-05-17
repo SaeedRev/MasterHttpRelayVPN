@@ -32,11 +32,6 @@ jobs:
         run: |
           pyinstaller --onefile main.py
 
-      - name: Copy to repo dist
-        run: |
-          mkdir -p dist
-          cp dist/* dist/
-
       - name: Commit and push
         run: |
           git config user.name "github-actions"
